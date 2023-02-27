@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>kalista's resolution generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <style>
+    </style>
+
+</head>
+<body>
+
+    <script src="resolve.js"></script>
+    <script></script>
+    <div id="heading">
+        <h1>kalista's wonderful resolution generator</h1>
+        <h3>a project by kalista</h3>
+    </div>
+    <div class="screen">
+        <div class="contain">
+            <label for="resolve">Choose a Type:</label>
+            <select name="resolve" id="resolve">
+                <option value="policy">Policy</option>
+                <option value="value">Value</option>
+                <option value="fact">Fact</option>
+            </select>
+
+            <br />
+          
+        </div>
+        <div></div>
+
+        <h2 class="shadowTxt">Your Resolution Is...</h2>
+        <p id="random_Policy"></p>
+        <p id="random_Value"></p>
+        <p id="random_Fact"></p>
+
+
+        <div id="endButt">
+            <input id="clickMe" type="button" value="Generate Basics" onclick="generateRoom();" />
+        </div>
+    </div>
+
+
+
+</body>
+</html>
