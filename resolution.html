@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+
     <style>
     </style>
 
 </head>
 <body>
 
-    <script src="resolve.js"></script>
-    <script></script>
+    <script src="resolve.js">
+ </script>
+
     <div id="heading">
         <h1>kalista's wonderful resolution generator</h1>
         <h3>a project by kalista</h3>
@@ -27,21 +29,35 @@
                 <option value="value">Value</option>
                 <option value="fact">Fact</option>
             </select>
+            <label for="amount">Choose amount:</label>
+            <select name="amount" id="amount">
+                <option value="one">1</option>
+                <option value="five">5</option>
+                <option value="ten">10</option>
+            </select>
 
             <br />
-          
+
         </div>
         <div></div>
 
         <h2 class="shadowTxt">Your Resolution Is...</h2>
-        <p id="random_Resolve"></p>
-       
+        <p id="random_Resolve" onclick="strikeThru()"></p>
+        <p id="random_Resolve2" onclick="strikeThru()"></p>
+        <p id="random_Resolve3" onclick="strikeThru()"></p>
+        <p id="random_Resolve4" onclick="strikeThru()"></p>
+        <p id="random_Resolve5" onclick="strikeThru()"></p>
+
+
 
 
         <div id="endButt">
-            <input id="clickMe" type="button" value="Generate Basics" onclick="generateRoom();" />
+            <div id="changeColor"></div>
+         <input id="clickMe" type="button" value="Generate Basics" onclick="generateRoom();" />
+        </div>
         </div>
     </div>
+    <footer>Kalista Shields 2023</footer>
 
 
 
