@@ -20,7 +20,7 @@ function generatePolicy() {
     ];
 
     var name = capFirst(prefix[getRandomInt(0, prefix.length)]) + " " + (body[getRandomInt(0, body.length)]);
-    document.getElementById("random_Policy").innerHTML = name;
+    document.getElementById("random_Resolve").innerHTML = name;
 }
 function generateValues() {
     var prefix = [
@@ -45,7 +45,7 @@ function generateValues() {
     ];
 
     var name = capFirst(prefix[getRandomInt(0, prefix.length)]) + " " + (value1[getRandomInt(0, value1.length)]) + " "+ (qualifier[getRandomInt(0, qualifier.length)]) + " "+ (value2[getRandomInt(0, value2.length)]);
-    document.getElementById("random_Value").innerHTML = name;
+    document.getElementById("random_Resolve").innerHTML = name;
 }
 function generateFact() {
     var prefix = [
@@ -70,7 +70,7 @@ function generateFact() {
     ];
 
     var name = capFirst(prefix[getRandomInt(0, prefix.length)]) + " " + (value1[getRandomInt(0, value1.length)]) + " is " + " " + (value2[getRandomInt(0, value2.length)]) + " " + (importance[getRandomInt(0, importance.length)]);
-    document.getElementById("random_Fact").innerHTML = name;
+    document.getElementById("random_Resolve").innerHTML = name;
 }
 function genPolicy() {
     var resolutionSelect = document.getElementById('resolve');
