@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-color: #E9F5DB;
 }
 
@@ -88,5 +88,9 @@ nav {
     margin: auto;
     width: 60%;
     padding: 10px;
+}
+
+.clickMe {
+    color: black;
 }
 
