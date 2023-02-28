@@ -145,20 +145,20 @@ function generateValues() {
 
     ];
     var value1 = [
-        "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts", "abortion rights", "security", "eliminating student debt", "free college", "social security",
-        "for profit prisons","opioid oversodes"
+        "big business is", "privacy is ", "profits are", "enviromental conservation is", "military strength is", "big tech is", "FDA oversite is", "human rights are",
+        "workers rights are", "unionization efforts are", "abortion rights are", "security is", "eliminating student debt is", "free college is", "social security is",
+        "for profit prisons are","opioid oversodes are"
         
     ];
 
     var qualifier = [
-        "is/are more important than", "is/are less important than", "trumps"
+        "more important than", "less important than", "more valuble than","less valuble than"
 
     ];
 
     var value2 = [
         "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts","security","expansion","corperate expansion","the death penalty"
+        "workers rights", "unionization efforts","security","expansion","corperate expansion","the death penalty","big pharma"
     ];
 
     var name = capFirst(prefix[getRandomInt(0, prefix.length)]) + " " + (value1[getRandomInt(0, value1.length)]) + " "+ (qualifier[getRandomInt(0, qualifier.length)]) + " "+ (value2[getRandomInt(0, value2.length)]);
@@ -170,20 +170,20 @@ function generateValues5() {
 
     ];
     var value1 = [
-        "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts", "abortion rights", "security", "eliminating student debt", "free college", "social security",
-        "for profit prisons", "opioid oversodes"
+        "big business is", "privacy is ", "profits are", "enviromental conservation is", "military strength is", "big tech is", "FDA oversite is", "human rights are",
+        "workers rights are", "unionization efforts are", "abortion rights are", "security is", "eliminating student debt is", "free college is", "social security is",
+        "for profit prisons are", "opioid oversodes are"
 
     ];
 
     var qualifier = [
-        "is/are more important than", "is/are less important than", "trumps"
+        "more important than", "less important than", "more valuble than", "less valuble than"
 
     ];
 
     var value2 = [
         "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts", "security", "expansion", "corperate expansion", "the death penalty"
+        "workers rights", "unionization efforts", "security", "expansion", "corperate expansion", "the death penalty", "big pharma"
     ];
 
     var name = capFirst(prefix[getRandomInt(0, prefix.length)]) + " " + (value1[getRandomInt(0, value1.length)]) + " " + (qualifier[getRandomInt(0, qualifier.length)]) + " " + (value2[getRandomInt(0, value2.length)]);
@@ -203,20 +203,20 @@ function generateValuesMix() {
 
     ];
     var value1 = [
-        "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts", "abortion rights", "security", "eliminating student debt", "free college", "social security",
-        "for profit prisons", "opioid oversodes"
+        "big business is", "privacy is ", "profits are", "enviromental conservation is", "military strength is", "big tech is", "FDA oversite is", "human rights are",
+        "workers rights are", "unionization efforts are", "abortion rights are", "security is", "eliminating student debt is", "free college is", "social security is",
+        "for profit prisons are", "opioid oversodes are"
 
     ];
 
     var qualifier = [
-        "is/are more important than", "is/are less important than", "trumps"
+        "more important than", "less important than", "more valuble than", "less valuble than"
 
     ];
 
     var value2 = [
         "big business", "privacy", "profits", "enviromental conservation", "military strength", "big tech", "FDA oversite", "human rights",
-        "workers rights", "unionization efforts", "security", "expansion", "corperate expansion", "the death penalty"
+        "workers rights", "unionization efforts", "security", "expansion", "corperate expansion", "the death penalty", "big pharma"
     ];
 
     
@@ -362,7 +362,7 @@ function genValue() {
             var resolutionValue = resolutionSelect.options[resolutionSelect.selectedIndex].value;
             console.log(resolutionValue);
             if (resolutionValue == 'value' && amountValue == 'one') {
-                generateValue();
+                generateValues();
             }
             if (resolutionValue == 'value' && amountValue == 'five') {
                 generateValues5();
@@ -396,4 +396,3 @@ function generateRoom() {
     genValue();
     genMixed();
 }
-
